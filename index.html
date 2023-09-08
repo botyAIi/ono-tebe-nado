@@ -43,16 +43,18 @@
         alt="Логотип Оно тебе надо"
       >
       </a>
-      <div class="header__address address">
-        <a href="tel:+99995555555">
-          +9 999 555 5555
-        </a>
-        <a href="mailto:nfo@sobaka.ge">
-          info@sobaka.ge
-        </a>
+      <div class="header__address">
         <address class="address">
-          наб. Принсенграхт 263-265, 
-          <br>Амстердам
+          <a href="tel:+99995555555">
+            +9 999 555 5555
+          </a>
+          <a href="mailto:info@sobaka.ge">
+            info@sobaka.ge
+          </a>
+          <p>
+            наб. Принсенграхт 263-265, 
+            Амстердам
+          </p>
         </address>
       </div>
     </header>
@@ -80,9 +82,9 @@
         </article>
       </section>
       <section class="lots content-section" id="lots">
-        <h3 class="lots__heading">
+        <h2 class="lots__heading">
           лоты
-        </h3>
+        </h2>
 
         <!--КАРТОЧКИ-ССЫЛКИ Начало-->
 
@@ -140,8 +142,12 @@
         </ul>
                 
         <!--КАРТОЧКИ-ССЫЛКИ конец-->
-        
-        <a class="lots__look-more-link" href="#0">посмотреть больше</a>
+
+        <article class="lots__look-more-link">  
+          <a href="#0">
+            посмотреть больше <!--ссылка в контейнере-->
+          </a>
+        <article>
       </section>
       <section class="about content-section" id="about">
         <div class="about__column about__logo">
@@ -152,9 +158,9 @@
           >
         </div>
         <div class="about__column">
-          <h4 class="about__title">
+          <h2 class="about__title">
             об аукционе
-          </h4>
+          </h2>
           <div class="about__text">
             <p>
               Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата.
@@ -182,12 +188,12 @@
         <a href="tel:+99995555555">
           +9 999 555 5555
         </a><br>
-        <a href="mailto:nfo@sobaka.ge">
+        <a href="mailto:info@sobaka.ge">
           info@sobaka.ge
         </a>
         <p>
           наб. Принсенграхт 263-265, 
-          <br>Амстердам
+          Амстердам
         </p>  
       </address>
         <nav class="footer__menu">
@@ -211,7 +217,7 @@
       </nav>
       <ul class="footer__social-list">
         <li class="footer__social-list-item">
-          <a class="footer__social-link" href="#0">
+          <a class="footer__social-link" href="#0" target="_blank">
             <img 
               src="./images/yt.svg"
               class="footer__social-icon"
@@ -220,7 +226,7 @@
           </a>         
         </li>
         <li class="footer__social-list-item">
-          <a class="footer__social-link" href="#0">
+          <a class="footer__social-link" href="#0" target="_blank">
             <img 
               src="./images/vk.svg"
               class="footer__social-icon"
@@ -229,7 +235,7 @@
           </a>         
         </li>
         <li class="footer__social-list-item">
-          <a class="footer__social-link" href="#0">
+          <a class="footer__social-link" href="#0" target="_blank">
             <img 
               src="./images/pinterest.svg"
               class="footer__social-icon"

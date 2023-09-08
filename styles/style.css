@@ -15,7 +15,7 @@
 
 .header {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr min-content 1fr;
   justify-content: space-between;
   padding: 92px 50px 92px 50px;
   font-size: 18px;
@@ -62,11 +62,16 @@
 }
 
 .address {
-  justify-content: center;
+  max-width: 240px;
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
   line-height: 1.35;
+}
+
+.address a {
+  border-bottom: 1px solid;
+  text-decoration: none;
 }
 
 .header__address {
@@ -74,6 +79,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   justify-items: center;
+  justify-content: center;
   align-content: flex-end;
 }
 
@@ -175,6 +181,7 @@ button {
   padding: 3px 50px 0 50px;
 }
 
+
 .lots__heading {
   padding: 0 0 27px 40px;
   padding-left: 40px;
@@ -187,6 +194,7 @@ button {
   display: flex;
   flex-wrap: wrap;
   flex-grow: 1;
+  flex-grow: 1;
   justify-content: space-evenly;
   align-content: space-evenly;
   gap: 25px;
@@ -198,6 +206,9 @@ button {
   display: flex;
   width: 430px;
   min-height: 450px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .card__link {
@@ -218,17 +229,14 @@ button {
 
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
-  background-size: cover;
 }
 
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  background-size: cover;
 }
 
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-size: cover;
 }
 
 .card__title {
@@ -249,9 +257,13 @@ button {
 }
 
 .lots__look-more-link {
-  flex-grow: 1;
-  padding: 30px 0 2px 40px; /*странный отступ снизу на макете, если это задумка то она интегрирована */
-  font-size: 20px;
+  padding: 30px 200px 2px 40px; /*странный отступ снизу на макете, если это задумка то она интегрирована */
+  font-size: 20px;  
+  font-weight: 400;
+}
+.lots__look-more-link a { 
+  text-decoration: none;
+  border-bottom: #000 solid 1px;
 }
 
 .about {
@@ -288,6 +300,8 @@ button {
   font-weight: 700;
   font-size: 40px;
   text-transform: uppercase;
+  
+  
 }
 
 .about__text {
@@ -301,7 +315,7 @@ button {
 
 .footer {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
   align-content: space-between;
   padding: 180px 50px 90px 50px;
 }
@@ -320,8 +334,8 @@ button {
 .footer__menu-list-item a {
   font-weight: 400;
   font-size: 18px;
-  line-height: normal;
   font-style: normal;
+  line-height: normal;
 }
 
 .footer__menu-link {
