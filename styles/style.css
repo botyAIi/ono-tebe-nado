@@ -194,7 +194,6 @@ button {
   display: flex;
   flex-wrap: wrap;
   flex-grow: 1;
-  flex-grow: 1;
   justify-content: space-evenly;
   align-content: space-evenly;
   gap: 25px;
@@ -258,9 +257,10 @@ button {
 
 .lots__look-more-link {
   padding: 30px 200px 2px 40px; /*странный отступ снизу на макете, если это задумка то она интегрирована */
-  font-size: 20px;  
+  font-size: 20px;
   font-weight: 400;
 }
+
 .lots__look-more-link a { 
   text-decoration: none;
   border-bottom: #000 solid 1px;
@@ -323,7 +323,7 @@ button {
 .footer__menu {
   display: flex;
   justify-self: center;
-  align-items: top;
+  align-items: start;
 }
 
 .footer__menu-list {
