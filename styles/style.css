@@ -92,7 +92,7 @@
   flex-direction: column;
   gap: 135px;
   padding: 165px 50px 50px 50px;
-  background-image: url(/images/cover.jpg);
+  background-image: url(./images/cover.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -294,7 +294,7 @@ button {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 25px;
+  gap: 27px; /*подгоняю по своему макету woff и woff2 не читается*/
   font-weight: 400;
   font-size: 20px;
 }
@@ -303,7 +303,7 @@ button {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-content: space-between;
-  padding: 184px 50px 90px 50px;
+  padding: 187px 50px 90px 50px;
 }
 
 .footer__menu {
@@ -317,9 +317,11 @@ button {
   list-style-type: none;
 }
 
-.footer__menu-list-item {
+.footer__menu-list-item a {
   font-weight: 400;
   font-size: 18px;
+  line-height: normal;
+  font-style: normal;
 }
 
 .footer__menu-link {
