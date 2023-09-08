@@ -3,7 +3,7 @@
 
 .content-section {
   width: 100%;
-  max-width: 1440px;  
+  max-width: 1440px;
   margin: auto;
 }
 
@@ -92,7 +92,7 @@
   flex-direction: column;
   gap: 135px;
   padding: 165px 50px 50px 50px;
-  background-image: url(./images/cover.jpg);
+  background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -156,7 +156,7 @@
 
 button {
   color: #FFF;
-  font-family: Raleway, sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 400;
   font-size: 22px;
   background-color: transparent;
@@ -294,7 +294,7 @@ button {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 27px; /*подгоняю по своему макету woff и woff2 не читается*/
+  gap: 25px;
   font-weight: 400;
   font-size: 20px;
 }
@@ -303,7 +303,7 @@ button {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-content: space-between;
-  padding: 187px 50px 90px 50px;
+  padding: 180px 50px 90px 50px;
 }
 
 .footer__menu {
